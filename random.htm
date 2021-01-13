@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang = "he-il">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type:text/css href="styles.css">
+<title>FirstSub</title>
+<meta http-equiv="refresh" content="900">
+
+
+</head>
+
+<body>
+
+			<header>
+			<h1 class="tablet">ברוכים הבאים</h1>
+			<h1 style="margin-top:0" class="tablet">FIRSTSUBל</h1>
+			<h1 class="pc">WELCOME TO FIRSTSUB</h1>
+			</header>
+			<br><br>
+	<ul class="navbar" >
+	<li><a href="hub.htm">מסך ראשי</a></li>
+<div class="dropDown">
+		<div class="dropbtn">
+			<button onclick="dropdown()">יוטיוב</button>
+		</div>
+		<div id="show" class="dropContent">
+			<a href="https://www.youtube.com/c/FoxenAnime">FoxenAnime</a>
+			<a href="https://www.youtube.com/channel/UCgR3SrM8T6GCFUTuxSFlR7A">anime balls deep</a>
+		</div>
+	</div>	
+	<li><a href="manga.htm">מנגה</a></li>
+	<li><a href="anime.htm">אנימה</a></li>
+	<li><a href="stuff.htm">להצתרפות לצוות</a></li>
+	<li id="running">אנימה רנדומלית</li>
+</ul>	
+<div class="animePost">
+	<button class="chooseBtn" onclick="randomAnime()">לחץ כדי לבחור</button>
+	<div id="text"></div>
+	<div id="randomImg"></div>
+</div>
+
+<div class="mangaPost">
+	<button style="margin-top: 50vw;"  class="chooseBtn" onclick="randomManga()">לחץ כדי לבחור</button>
+	<div id="Mtext"></div>
+	<div id="MrandomImg"></div>
+</div>
+
+
+<script>
+function dropDown() {
+document.getElementById("show").classList.toggle("show");}
+/* random anime at start */
+	let chosen = Math.floor((Math.random()*5)+1);
+	console.log(chosen);
+	document.getElementById("randomImg").innerHTML=`<img class=Rposter src="animePosters/poster${chosen}.jpg">`;
+	document.getElementById("text").innerHTML=`<embed type="text/html" class=text src=animeTexts/anime${chosen}.htm style="position:relative;float:right;margin-right:10vw;width:58%">`
+
+function randomAnime(){
+	let chosen = Math.floor((Math.random()*5)+1);
+	console.log(chosen);
+	document.getElementById("randomImg").innerHTML=`<img class=Rposter src="animePosters/poster${chosen}.jpg">`;
+	document.getElementById("text").innerHTML=`<embed type="text/html" class=text src=animeTexts/anime${chosen}.htm style="position:relative;float:right;margin-right:10vw;width:58%">`
+}
+
+/* random manga at start */
+	let Mchosen = Math.floor((Math.random()*7)+1);
+	console.log(Mchosen);
+	document.getElementById("MrandomImg").innerHTML=`<img class=Rposter style="margin-top:45vw" src="mangaPosters/manga${Mchosen}.jpg">`;
+	document.getElementById("Mtext").innerHTML=`<embed type="text/html" class=text src=mangaTexts/manga${Mchosen}.htm style="position:relative;float:right;margin-right:10vw;width:58%; margin-top:13vw">`
+
+function randomManga(){
+	let Mchosen = Math.floor((Math.random()*7)+1);
+	console.log(Mchosen);
+	document.getElementById("MrandomImg").innerHTML=`<img class=Rposter style="margin-top:45vw" src="mangaPosters/manga${Mchosen}.jpg">`;
+	document.getElementById("Mtext").innerHTML=`<embed type="text/html" class=text src=mangaTexts/manga${Mchosen}.htm style="position:relative;float:right;margin-right:10vw;width:58%; margin-top:13vw">`
+}
+</script>
+</body>
+</html>

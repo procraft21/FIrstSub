@@ -1,0 +1,16 @@
+@font-face {
+    font-family:SuezOne;
+    src: url("Suezone-regular.ttf")
+}
+
+h1{
+    font-family:SuezOne;
+}
+p{
+    font-family: SuezOne;
+    font-size: 3vw;
+}
+a{
+    font-size: 3vw;
+    font-family: SuezOne;
+}

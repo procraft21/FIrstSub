@@ -1,0 +1,9 @@
+@font-face {
+    font-family:SuezOne;
+    src: url("Suezone-regular.ttf")
+}
+
+h1{
+    float:right;
+    font-family:SuezOne;
+}

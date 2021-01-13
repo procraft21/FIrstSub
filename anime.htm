@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="900">
+	<meta charset="UTF-8">
+	<title>FirstSub-anime</title>
+	<link rel="stylesheet" type:text/css href="styles.css">
+</head>
+<body>
+	<header>
+		<h1 class="tablet">ברוכים הבאים</h1>
+		<h1 style="margin-top:0" class="tablet">FIRSTSUBל</h1>
+		<h1 class="pc">WELCOME TO FIRSTSUB</h1>
+	</header>
+	<br><br>
+		<ul class="navbar" >
+			<li><a href="hub.htm">מסך ראשי</a></li>
+			<div class="dropDown">
+					<button id="dropbtn" class="dropbtn" onclick="myFunction()">יוטיוב</button>
+				<div id="show" class="dropContent">
+					<a href="https://www.youtube.com/c/FoxenAnime">FoxenAnime</a>
+					<a href="https://www.youtube.com/channel/UCgR3SrM8T6GCFUTuxSFlR7A">anime balls deep</a>
+				</div>
+			</div>
+			<li ><a href="manga.htm">מנגה</a></li>
+			<li id="running">אנימה</li>
+			<li ><a href="stuff.htm">להצטרפות לצוות</a></li>
+			<li><a href="random.htm">אנימה רנדומלית</a></li>
+		</ul>
+	<article>
+	<br class="pcbr"><br class="pcbr">
+	<table class="animeTable">
+		<tr>	
+			<td class="season"><img class="animeImg" src="animePosters/poster3.jpg"><pre><h3>tonikaku kawaii</h3><h3> 1 season </h3><h3><mark> waiting for </mark><br><mark> new season </mark></h3></pre></td>
+			<td class="finishedAiring"><img class="animeImg" src="animePosters/poster4.jpg"><pre><h3>erased</h3><h3> 1 season</h3><h3><mark> finished </mark><br><mark> airing </mark></h3></pre></td>
+			<td class="onGoing"><a style="text-decoration: none;color:black" href="anime/aot.htm"><img class="animeImg" src="animePosters/poster1.jpg"><pre><h3>attack on titan</h3><h3> season 4</h3><h3><mark> on going </mark></h3></pre></td></a>
+			<td class="onGoing"><a style="text-decoration: none;color:black" href="anime/jujutsu kaisen.htm"><img class="animeImg" src="animePosters/poster2.jpg"><pre><h3>jujutsu kaisen</h3><h3>season 1</h3><h3><mark> on going </mark></h3></pre></td></a>
+			<td class="season"><img class="animeImg" src="animePosters/poster5.jpg"><pre><h3>danmachi</h3><h3>3 seasons</h3><h3><mark> waiting for </mark><br><mark> new season </mark></h3></pre></td>
+		</tr>
+		
+	</table>
+	</article>
+	<script>
+function myFunction() {
+document.getElementById("show").classList.toggle("show");}
+</script>
+</body>
+</html>
